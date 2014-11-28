@@ -1,7 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="nl.x-services.plugins.Echo"
+    version="4.3.10">
+    
+    <name>Echo</name>
+    
+    <description>
+        This plugin is just a test of the Echo example plugin.  Not useful to any one.
+    </description>
+    
+    <author>Chris Harden</author>
+    
+    <license>MIT</license>
+    
+    <keywords></keywords>
+    
+    <repo>https://github.com/chrisharden1/Echo.git</repo>
+    
+    <issue>https://github.com/chrisharden1/Echo/issues</issue>
+
+<engines>
+    <engine name="cordova" version=">=3.0.0"/>
+</engines>
+
+<js-module src="www/Echo.js" name="Echo">
+</js-module>
+
+
 <platform name="ios">
     <config-file target="config.xml" parent="/*">
         <feature name="Echo">
             <param name="ios-package" value="Echo" />
+            <param name="onload" value="true" />
         </feature>
     </config-file>
+    <header-file src="src/ios/Echo.h"/>
+    <source-file src="src/ios/Echo.m"/>
 </platform>
+
+</plugin>
