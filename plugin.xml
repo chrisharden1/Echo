@@ -1,0 +1,7 @@
+<platform name="ios">
+    <config-file target="config.xml" parent="/*">
+        <feature name="Echo">
+            <param name="ios-package" value="Echo" />
+        </feature>
+    </config-file>
+</platform>
